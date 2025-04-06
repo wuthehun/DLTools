@@ -85,7 +85,7 @@
     <script>
 	
 	
-        const fallbackBingoData = {
+        const fallbackData = {
 	"name": "Disneyland Randomizer",
 	"Catagories" :
 		[
@@ -164,19 +164,19 @@
 		]
 };
 
-        async function fetchBingoData() {
+        async function fetchData() {
             try {
                 const response = await fetch('https://dltools.artwu.art/DLRandom/items.json');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const jsonData = await response.json();
-                return jsonData.spaces;
+                return jsonData;
             } catch (error) {
                 console.error('Fetch failed, using fallback data:', error);
-                return fallbackBingoData;
+                return fallbackData;
             }
         }
 
-		const jsonData = fetchBingoData();
+		const jsonData = fetchData();
 		
         const categorySelect = document.getElementById('category-select');
         const randomizeButton = document.getElementById('randomize-button');
