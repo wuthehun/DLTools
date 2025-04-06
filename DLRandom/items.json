@@ -1,47 +1,78 @@
-[
-  {
-    "Catagory": {
-      "title": "Category 1 Title",
-      "items": [
-        {
-          "text": "Item 1.1 Text",
-          "value": "item1_1_value"
-        },
-        {
-          "text": "Item 1.2 Text",
-          "value": "item1_2_value"
-        }
-      ]
-    }
-  },
-  {
-    "Catagory": {
-      "title": "Category 2 Title",
-      "items": [
-        {
-          "text": "Item 2.1 Text",
-          "value": "item2_1_value"
-        },
-        {
-          "text": "Item 2.2 Text",
-          "value": "item2_2_value"
-        },
-        {
-          "text": "Item 2.3 Text",
-          "value": "item2_3_value"
-        }
-      ]
-    }
-  },
-  {
-    "Catagory": {
-      "title": "Another Category",
-      "items": [
-        {
-          "text": "Item 3.1 Text",
-          "value": "item3_1_value"
-        }
-      ]
-    }
-  }
-]
+{
+	"name": "Disneyland Randomizer",
+	"Catagories" :
+		[
+		  {
+			"Catagory": {
+			  "title": "Foods",
+			  "items": [
+				{
+				  "text": "Galactic Grill",
+				  "value": "Tomorrowland"
+				},
+				{
+				  "text": "Red Rose",
+				  "value": "Fantasyland"
+				}
+			  ]
+			}
+		  },
+		  {
+			"Catagory": {
+			  "title": "Rides",
+			  "items": [
+				{
+				  "text": "Star Tours",
+				  "value": "Tomorrowland"
+				},
+				{
+				  "text": "Space Mountain",
+				  "value": "Tomorrowland"
+				},
+				{
+				  "text": "Astro Blasters",
+				  "value": "Tomorrowland"
+				}
+			  ]
+			}
+		  },
+		  {
+			"Catagory": {
+			  "title": "Places visit",
+			  "items": [
+				{
+				  "text": "Tomorrowland",
+				  "value": "Tomorrowland"
+				},
+				{
+				  "text": "Grizzly Peak",
+				  "value": "Grizzly Peak"
+				},
+				{
+				  "text": "Pixar Pier",
+				  "value": "Pixar Pier"
+				}
+			  ]
+			}
+		  },
+		  {
+			"Catagory": {
+			  "title": "Things to do",
+			  "items": [
+				{
+				  "text": "Mickey Photo",
+				  "value": "picture"
+				},
+				{
+				  "text": "Pin Trade",
+				  "value": "pins"
+				},
+				{
+				  "text": "Walk around the rivers",
+				  "value": "Rivers"
+				}
+			  ]
+			}
+		  }
+		]
+}
