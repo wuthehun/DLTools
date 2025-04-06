@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Category Item</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            padding: 30px;
+            background-color: #e0f2f7; /* Light blue background */
+            color: #1a237e; /* Dark blue text */
+        }
 
+        h1 {
+            color: #1a237e;
+            margin-bottom: 20px;
+        }
+
+        #category-select {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #42a5f5; /* Medium blue border */
+            border-radius: 5px;
+            background-color: white;
+            color: #1a237e;
+            cursor: pointer;
+        }
+
+        #category-select:focus {
+            outline: none;
+            border-color: #1e88e5; /* Slightly darker blue focus */
+            box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #42a5f5; /* Medium blue button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e88e5; /* Darker blue on hover */
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(30, 136, 229, 0.7);
+        }
+
+        #random-item {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 18px;
+            border: 1px solid #42a5f5; /* Medium blue border */
+            border-radius: 5px;
+            background-color: #bbdefb; /* Light medium blue background */
+            color: #1a237e;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Category Item</h1>
+    <select id="category-select">
+        <option value="" disabled selected>Select a Category</option>
+    </select>
+    <button id="randomize-button">Randomize</button>
+    <div id="random-item"></div>
+
+    <script>
+        const jsonData = [
+            {
+                "Catagory": {
+                    "title": "Category 1 Title",
+                    "items": [
+                        {
+                            "text": "Item 1.1 Text",
+                            "value": "item1_1_value"
+                        },
+                        {
+                            "text": "Item 1.2 Text",
+                            "value": "item1_2_value"
+                        }
+                    ]
+                }
+            },
+            {
+                "Catagory": {
+                    "title": "Category 2 Title",
+                    "items": [
+                        {
+                            "text": "Item 2.1 Text",
+                            "value": "item2_1_value"
+                        },
+                        {
+                            "text": "Item 2.2 Text",
+                            "value": "item2_2_value"
+                        },
+                        {
+                            "text": "Item 2.3 Text",
+                            "value": "item2_3_value"
+                        }
+                    ]
+                }
+            },
+            {
+                "Catagory": {
+                    "title": "Another Category",
+                    "items": [
+                        {
+                            "text": "Item 3.1 Text",
+                            "value": "item3_1_value"
+                        }
+                    ]
+                }
+            }
+        ];
+
+        const categorySelect = document.getElementById('category-select');
+        const randomizeButton = document.getElementById('randomize-button');
+        const randomItemDiv = document.getElementById('random-item');
+
+        // Populate the dropdown with category titles
+        jsonData.forEach(categoryObject => {
+            const option = document.createElement('option');
+            option.value = categoryObject.Catagory.title;
+            option.textContent = categoryObject.Catagory.title;
+            categorySelect.appendChild(option);
+        });
+
+        randomizeButton.addEventListener('click', () => {
+            const selectedCategoryTitle = categorySelect.value;
+
+            if (selectedCategoryTitle) {
+                const selectedCategory = jsonData.find(catObj => catObj.Catagory.title === selectedCategoryTitle);
+
+                if (selectedCategory && selectedCategory.Catagory.items.length > 0) {
+                    const items = selectedCategory.Catagory.items;
+                    const randomIndex = Math.floor(Math.random() * items.length);
+                    const randomItem = items[randomIndex];
+                    randomItemDiv.textContent = `Random Item: ${randomItem.text} (Value: ${randomItem.value})`;
+                } else {
+                    randomItemDiv.textContent = "No items in this category.";
+                }
+            } else {
+                randomItemDiv.textContent = "Please select a category.";
+            }
+        });
+    </script>
+</body>
+</html>
