@@ -1,78 +1,341 @@
 {
-	"name": "Disneyland Randomizer",
-	"Catagories" :
-		[
-		  {
-			"Catagory": {
-			  "title": "Foods",
-			  "items": [
-				{
-				  "text": "Galactic Grill",
-				  "value": "Tomorrowland"
-				},
-				{
-				  "text": "Red Rose",
-				  "value": "Fantasyland"
-				}
-			  ]
-			}
-		  },
-		  {
-			"Catagory": {
-			  "title": "Rides",
-			  "items": [
-				{
-				  "text": "Star Tours",
-				  "value": "Tomorrowland"
-				},
-				{
-				  "text": "Space Mountain",
-				  "value": "Tomorrowland"
-				},
-				{
-				  "text": "Astro Blasters",
-				  "value": "Tomorrowland"
-				}
-			  ]
-			}
-		  },
-		  {
-			"Catagory": {
-			  "title": "Places visit",
-			  "items": [
-				{
-				  "text": "Tomorrowland",
-				  "value": "Tomorrowland"
-				},
-				{
-				  "text": "Grizzly Peak",
-				  "value": "Grizzly Peak"
-				},
-				{
-				  "text": "Pixar Pier",
-				  "value": "Pixar Pier"
-				}
-			  ]
-			}
-		  },
-		  {
-			"Catagory": {
-			  "title": "Things to do",
-			  "items": [
-				{
-				  "text": "Mickey Photo",
-				  "value": "picture"
-				},
-				{
-				  "text": "Pin Trade",
-				  "value": "pins"
-				},
-				{
-				  "text": "Walk around the rivers",
-				  "value": "Rivers"
-				}
-			  ]
-			}
-		  }
-		]
+    "Catagories": [
+        {
+            "Catagory": {
+                "items": [
+                    {
+                        "text": "Galactic Grill",
+                        "value": "Tomorrowland"
+                    },
+                    {
+                        "text": "Red Rose",
+                        "value": "Fantasyland"
+                    }
+                ],
+                "title": "Foods"
+            }
+        },
+        {
+            "Catagory": {
+                "items": [
+                    {
+                        "text": "Alice in Wonderland",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Astro Orbiter",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Autopia",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Big Thunder Mountain Railroad",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Buzz Lightyear Astro Blasters",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Casey Jr. Circus Train",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Davy Crockett's Explorer Canoes",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Disneyland Monorail",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Disneyland Railroad",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Dumbo the Flying Elephant",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Finding Nemo Submarine Voyage",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Haunted Mansion",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Indiana Jones Adventure",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "it's a small world",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Jungle Cruise",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "King Arthur Carrousel",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Mad Tea Party",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Mark Twain Riverboat",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Matterhorn Bobsleds",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Mickey & Minnie's Runaway Railway",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Mr. Toad's Wild Ride",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Peter Pan's Flight",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Pinocchio's Daring Journey",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Pirate's Lair on Tom Sawyer Island",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Pirates of the Caribbean",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Roger Rabbit's Car Toon Spin",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Sailing Ship Columbia",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Snow White's Enchanted Wish",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Space Mountain",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Splash Mountain",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Star Tours – The Adventures Continue",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Star Wars: Rise of the Resistance",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Star Wars: Smugglers Run",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Storybook Land Canal Boats",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Tarzan's Treehouse",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "The Many Adventures of Winnie the Pooh",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Gadget's Go Coaster",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Guardians of the Galaxy – Mission: BREAKOUT!",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Radiator Springs Racers",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Incredicoaster",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Toy Story Midway Mania!",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Soarin'",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Grizzly River Run",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Goofy's Sky School",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Jumpin' Jellyfish",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Golden Zephyr",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Silly Symphony Swings",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "The Little Mermaid ~ Ariel's Undersea Adventure",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Mater's Junkyard Jamboree",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Luigi's Rollickin' Roadsters",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "WEB SLINGERS: A Spider-Man Adventure",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Jessie's Critter Carousel",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Inside Out Emotional Whirlwind",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Monsters, Inc. Mike & Sulley to the Rescue!",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Mickey's PhilharMagic",
+                        "value": "DCA"
+                    }
+                ],
+                "title": "Rides"
+            }
+        },
+        {
+            "Catagory": {
+                "items": [
+                    {
+                        "text": "Main Street, U.S.A.",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Adventureland",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "New Orleans Square",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Frontierland",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Fantasyland",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Mickey's Toontown",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Tomorrowland",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Star Wars: Galaxy's Edge",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Bayou Country",
+                        "value": "Disneyland"
+                    },
+                    {
+                        "text": "Buena Vista Street",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Cars Land",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Pixar Pier",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Paradise Gardens Park",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Grizzly Peak",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Hollywood Land",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "Avengers Campus",
+                        "value": "DCA"
+                    },
+                    {
+                        "text": "San Fransokyo Square",
+                        "value": "DCA"
+                    }
+                ],
+                "title": "Places to visit"
+            }
+        },
+        {
+            "Catagory": {
+                "items": [
+                    {
+                        "text": "Mickey Photo",
+                        "value": "picture"
+                    },
+                    {
+                        "text": "Pin Trade",
+                        "value": "pins"
+                    },
+                    {
+                        "text": "Walk around the rivers",
+                        "value": "Rivers"
+                    }
+                ],
+                "title": "Things to do"
+            }
+        }
+    ],
+    "name": "Disneyland Randomizer"
 }
